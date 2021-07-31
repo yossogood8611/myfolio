@@ -1,0 +1,25 @@
+.login{
+    display: flex;
+    flex-direction: row;
+}
+
+.content_left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    z-index: 0;
+}
+
+.left_small_logo{
+    font-size: 36px;
+}
+
+.left_big_logo{
+    font-size: 105px;
+}
+
+.content_right{
+    width: 740px;
+    z-index: 1;
+}
