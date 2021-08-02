@@ -9,17 +9,152 @@
     width: 100%;
     color: white;
     z-index: 0;
+    background-image: url("../../image/login_left_.png");
 }
 
 .left_small_logo{
     font-size: 36px;
+    margin: 10px;
 }
 
 .left_big_logo{
     font-size: 105px;
+    text-align: center;
+    margin: 400px 0 0 0;
 }
 
 .content_right{
     width: 740px;
     z-index: 1;
+    box-sizing: border-box;
+    padding: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login_text {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 64px;
+}
+
+.login_email_text{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.login_email_form {
+    width: 496px;
+    padding: 10px 0 10px 0;
+    border-bottom: solid 1px #ADADAD;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 43px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: solid 1px #6D67FF;
+    font-weight: bold;
+    color : black;
+}
+
+.login_next_btn {
+    width: 495px;
+    height: 80px;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 22px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+
+.login_next_btn_able {
+    width: 495px;
+    height: 80px;
+    background-color: #6D67FF;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 22px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 38px;
+    cursor: pointer;
+}
+
+.login_social{
+    width: 495px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ADADAD;
+    margin-bottom: 29px;
+}
+
+.login_social_icon_box{
+    width: 460px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 228px;
+}
+
+.login_social_icon{
+    width: 70px;
+    height: 70px;
+}
+
+.login_to_join_box{
+    width: 495px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+
+.login_to_join_line{
+    width: 143px;
+    height: 1px;
+    background-color: #ADADAD;
+    margin-top: 10px;
+}
+
+.login_to_join_text{
+    color: #ADADAD;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.login_join_btn {
+    width: 495px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    font-size: 24px;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding-top: 22px;
+    text-align: center;
 }
