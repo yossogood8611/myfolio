@@ -50,9 +50,9 @@ class Join extends Component {
                             <div className="login_email_text">이메일 (아이디)</div>
                             <input className="login_email_form" placeholder="이메일 주소를 입력해주세요" onChange={this.handleChangeEmail}/>
                             <div className="login_email_text">비밀번호</div>
-                            <input className="login_email_form" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd}/>
+                            <input type="password" className="login_email_form" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd}/>
                             <div className="login_email_text">비밀번호 확인</div>
-                            <input className="login_email_form" placeholder="비밀번호를 다시 한 번 입력해주세요" onChange={this.handleChangePwd_}/>
+                            <input type="password" className="login_email_form" placeholder="비밀번호를 다시 한 번 입력해주세요" onChange={this.handleChangePwd_}/>
                             <Link to={`/join_done`}>
                                 <div className="login_next_btn_able">다음으로</div>
                             </Link>

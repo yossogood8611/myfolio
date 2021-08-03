@@ -4,11 +4,10 @@
     background-color: #6D67FF;
     color: white;
     box-sizing: border-box;
-    padding: 15px 92px 0 92px;
+    padding: 15px 0 0 92px;
 }
 
 .contents{
-    width: 1736px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,13 +16,14 @@
 .logo{
     color: white;
     font-size: 36px;
+    margin-right: 100px;
 }
 
 .menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 615px;
+    width: 815px;
     font-size: 18px;
     font-weight: bold;
     box-sizing: border-box;
@@ -33,13 +33,13 @@
 }
 
 .buttons{
-    width: 323px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
     padding-top: 5px;
-    margin-right: -20px;
+    margin-right: -100px;
 }
 
 .upload_button {
@@ -53,6 +53,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     padding-top: 12px;
+    margin-right: 20px;
 }
 
 .myPortfolio_button {
@@ -73,4 +74,5 @@
     width: 36px;
     height: 34px;
     margin-top: 15px;
+    margin-left: -50px;
 }

@@ -36,7 +36,9 @@ class Login extends Component {
                                 <label className="login_email_text">이메일 주소</label>
                                 <input className="login_email_form" placeholder="이메일 주소를 입력해주세요" onChange={this.handleChangeEmail}/>
                             {this.isEmail(this.state.email)?(
+                                <Link to={`/login_pwd`}>
                                     <div className="login_next_btn_able">다음으로</div>
+                                </Link>
                             ) : (
                                 <div className="login_next_btn">다음으로</div>
                             )}

@@ -1,0 +1,38 @@
+.user_box{
+    display: flex;
+    flex-direction: row;
+    width: 490px;
+    height: 60px;
+    margin-bottom: 39px;
+}
+
+.user_img{
+    width: 60px;
+    height: 60px;
+    background-color: #ADADAD;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.user_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user_text{
+    font-weight: normal;
+    font-size: 14px;
+    color: #ADADAD;
+    margin-bottom: 8px;
+}
+
+.user_email{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.login_to_join_box{
+    margin-top: 150px;
+}

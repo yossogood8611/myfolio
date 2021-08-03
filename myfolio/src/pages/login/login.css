@@ -117,7 +117,7 @@ input:focus{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 228px;
+    margin-bottom: 200px;
 }
 
 .login_social_icon{
