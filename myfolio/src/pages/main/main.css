@@ -1,0 +1,8 @@
+.main_page{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    width: 100%;
+}

@@ -16,6 +16,12 @@ class Login_pwd extends Component {
         this.setState({pwd: e.target.value})
     }
 
+    onKeyPress=(e)=>{
+        if(e.key==='Enter'){
+            this.login();
+        }
+    }
+
     render() {
         return (
             <div>
@@ -36,9 +42,9 @@ class Login_pwd extends Component {
                             <label className="login_email_text">비밀번호</label>
                             <input type="password" className="login_email_form" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd}/>
                             {this.state.pwd!==''?(
-                                <Link to={`/`}><div className="login_next_btn_able">다음으로</div></Link>
+                                <Link to={`/`}><div className="login_next_btn_able">로그인</div></Link>
                             ) : (
-                                <div className="login_next_btn">다음으로</div>
+                                <div className="login_next_btn">로그인</div>
                             )}
                             <div className="login_to_join_box">
                                 <div className="login_to_join_line"></div>

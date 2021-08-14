@@ -4,15 +4,54 @@ import '../my_page/my_page.css';
 import Header from '../../components/header/Header';
 import ModifyIcon from '../../image/mypage_modify.svg';
 import NewFolio from '../../image/portfolio_new.svg';
+import {getCookie} from "../../cookies";
+import axios from "axios";
 
 class MyPage extends Component {
     constructor(props){
         super(props);
         this.state={
-            email : 'rooproop111@naver.com',
-            name : 'Yujin Lee',
-            text : 'Web Front Developer / South Korea'
+            email : 'undefined',
+            name : 'undefined',
+            text : '추후 추가',
+            portfolio : [{}]
         }
+    }
+
+    getUser = async function () {
+        let userSeq = getCookie('userSeq');
+        let result = await axios({
+            method : 'GET',
+            url : `http://localhost:8080/user/${userSeq}`,
+            headers : {
+                "Content-Type": 'application/json',
+                'x-access-token' : getCookie('accessToken')
+            }
+        });
+        this.setState({
+            email: result.data.email,
+            name : result.data.name
+        })
+    }
+
+    getPortfolio = async function() {
+        let userSeq = getCookie("userSeq");
+        let result = await axios ({
+            method : 'GET',
+            url : `http://localhost:8080/portfolio/${userSeq}`,
+            headers : {
+                "Content-Type": 'application/json',
+                'x-access-token' : getCookie('accessToken')
+            }
+        });
+        this.setState({
+            portfolio : result.data
+        })
+    }
+
+    componentDidMount() {
+        this.getUser();
+        this.getPortfolio();
     }
 
     render() {
@@ -37,31 +76,13 @@ class MyPage extends Component {
                                 <img className="portfolio_img" src={NewFolio}/>
                                 <div className="portfolio_name">새로운 포트폴리오</div>
                             </div>
-                            <div className="portfolio">
-                                <div className="portfolio_img"></div>
-                                <div className="portfolio_name">내 포트폴리오</div>
-                                <div className="portfolio_make">2021.04.28</div>
-                            </div>
-                            <div className="portfolio">
-                                <div className="portfolio_img"></div>
-                                <div className="portfolio_name">내 포트폴리오</div>
-                                <div className="portfolio_make">2021.04.28</div>
-                            </div>
-                            <div className="portfolio">
-                                <div className="portfolio_img"></div>
-                                <div className="portfolio_name">내 포트폴리오</div>
-                                <div className="portfolio_make">2021.04.28</div>
-                            </div>
-                            <div className="portfolio">
-                                <div className="portfolio_img"></div>
-                                <div className="portfolio_name">내 포트폴리오</div>
-                                <div className="portfolio_make">2021.04.28</div>
-                            </div>
-                            <div className="portfolio">
-                                <div className="portfolio_img"></div>
-                                <div className="portfolio_name">내 포트폴리오</div>
-                                <div className="portfolio_make">2021.04.28</div>
-                            </div>
+                            {this.state.portfolio.map(arr=>(
+                                <div className="portfolio" key={arr.seq}>
+                                    <img className="portfolio_img" src={arr.projectImage}/>
+                                    <div className="portfolio_name">{arr.projectName}</div>
+                                    <div className="portfolio_make">{arr.regdate}</div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
