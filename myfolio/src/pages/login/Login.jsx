@@ -5,12 +5,51 @@ import facebook_icon from '../../image/login_facebook_icon.svg';
 import google_icon from '../../image/login_google_icon.svg';
 import naver_icon from '../../image/login_naver_icon.svg';
 import {withRouter, Link} from "react-router-dom";
+import {getCookie,setCookie} from "../../cookies";
+import axios from "axios";
 
 class Login extends Component {
     constructor(props){
         super(props);
         this.state={
-            email: '',
+            email: undefined,
+            pwd : undefined,
+        }
+    }
+
+    login = () => {
+        const {email, pwd} = this.state;
+        const result = axios({
+            method : 'POST',
+            url : "localhost:8080/user/login",
+            headers:{
+                "Content-Type" : "application/json"
+            },
+            data : {
+                email : email,
+                pwd : pwd
+            }
+        }).then((result=>{
+            if(result.data.status===0){
+                alert('아이디와 비밀번호를 다시 확인해주세요');
+                document.getElementById("login_id_box").value='';
+                document.getElementById("login_pw_box").value='';
+        }else{
+                const {history} = this.props;
+                this.state.token = result.data.accessToken;
+                this.state.userSeq = result.data.userSeq;
+                setCookie("userSeq", this.state.userSeq);
+                setCookie("accessToken", this.state.token);
+                history.push('/');
+            }
+            }
+            ))
+
+    }
+
+    onKeyPress=(e)=>{
+        if(e.key==='Enter'){
+            this.login();
         }
     }
 
@@ -21,6 +60,9 @@ class Login extends Component {
 
     handleChangeEmail = (e) => {
         this.setState({email: e.target.value})
+    }
+    handleChangePwd = (e) => {
+        this.setState({pwd: e.target.value})
     }
 
     render() {
@@ -35,6 +77,9 @@ class Login extends Component {
                             <div className="login_text">로그인</div>
                                 <label className="login_email_text">이메일 주소</label>
                                 <input className="login_email_form" placeholder="이메일 주소를 입력해주세요" onChange={this.handleChangeEmail}/>
+
+                                <input className="login_email_form" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd} onKeyPress={this.onKeyPress}/>
+
                             {this.isEmail(this.state.email)?(
                                 <Link to={`/login_pwd`}>
                                     <div className="login_next_btn_able">다음으로</div>

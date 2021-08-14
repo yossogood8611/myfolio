@@ -158,3 +158,14 @@ input:focus{
     padding-top: 22px;
     text-align: center;
 }
+
+.join_userType {
+    color: #6D67FF;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.join_userType_ {
+    margin-right: 20px;
+}
