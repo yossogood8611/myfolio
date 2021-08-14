@@ -21,7 +21,7 @@ class Login extends Component {
         const {email, pwd} = this.state;
         const result = axios({
             method : 'POST',
-            url : "localhost:8080/user/login",
+            url : "http://localhost:8080/user/login",
             headers:{
                 "Content-Type" : "application/json"
             },

@@ -34,7 +34,7 @@ class Join extends Component {
         }
         let result = axios({
             method : 'POST',
-            url : "localhost:8080/user/signup",
+            url : "http://localhost:8080/user/signup",
             headers: {
                 "Content-Type" : `application/json`,
             },
@@ -50,7 +50,7 @@ class Join extends Component {
                 alert("회원가입이 성공적으로 완료되었습니다.");
                 const response = axios({
                     method : 'POST',
-                    url : "localhost:8080/user/login",
+                    url : "http://localhost:8080/user/login",
                     headers:{
                         "Content-Type" : "application/json"
                     },
