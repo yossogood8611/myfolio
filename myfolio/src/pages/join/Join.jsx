@@ -39,10 +39,10 @@ class Join extends Component {
                 "Content-Type" : `application/json`,
             },
             data: {
-                name : this.state.name,
-                email : this.state.email,
-                pwd : this.state.password,
-                userType : this.state.userType
+                name : name,
+                email : email,
+                pwd : pwd,
+                userType : userType
             }
 
         }).then((result)=>{
@@ -124,7 +124,7 @@ class Join extends Component {
                                 <label htmlFor="1">디자이너</label>
                                 <input type="radio" value="디자이너" id="1" onClick={this.handleChangeUserType_}/>
                             </form>
-                            <div className="login_next_btn_able" onClick={this.join}>다음으로</div>
+                            <div className="login_next_btn_able" onClick={this.join}>가입하기</div>
                             <div className="login_social">SNS 계정으로 로그인하기</div>
                             <div className="login_social_icon_box">
                                 <img className="login_social_icon" src={naver_icon}/>

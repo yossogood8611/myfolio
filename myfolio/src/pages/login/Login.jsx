@@ -30,10 +30,10 @@ class Login extends Component {
                 pwd : pwd
             }
         }).then((result=>{
-            if(result.data.status===0){
+            if(result.data.status!==400){
                 alert('아이디와 비밀번호를 다시 확인해주세요');
-                document.getElementById("login_id_box").value='';
-                document.getElementById("login_pw_box").value='';
+                document.getElementById("email").value='';
+                document.getElementById("pwd").value='';
         }else{
                 const {history} = this.props;
                 this.state.token = result.data.accessToken;
@@ -76,16 +76,14 @@ class Login extends Component {
                         <div className="right_box">
                             <div className="login_text">로그인</div>
                                 <label className="login_email_text">이메일 주소</label>
-                                <input className="login_email_form" placeholder="이메일 주소를 입력해주세요" onChange={this.handleChangeEmail}/>
+                                <input className="login_email_form" id="email" placeholder="이메일 주소를 입력해주세요" onChange={this.handleChangeEmail}/>
 
-                                <input className="login_email_form" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd} onKeyPress={this.onKeyPress}/>
+                                <input type="password" className="login_email_form" id="pwd" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd} onKeyPress={this.onKeyPress}/>
 
                             {this.isEmail(this.state.email)?(
-                                <Link to={`/login_pwd`}>
-                                    <div className="login_next_btn_able">다음으로</div>
-                                </Link>
+                                    <div className="login_next_btn_able" onClick={this.login}>로그인</div>
                             ) : (
-                                <div className="login_next_btn">다음으로</div>
+                                <div className="login_next_btn">로그인</div>
                             )}
                             <div className="login_social">SNS 계정으로 로그인하기</div>
                             <div className="login_social_icon_box">
