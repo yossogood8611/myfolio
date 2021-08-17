@@ -8,6 +8,7 @@ import JoinDonePage from "./pages/Join_done/JoinDone";
 import MyPage from './pages/my_page/MyPage';
 import Portfolio from './pages/portfolio/portfolio_1/Portfolio_1';
 import PortfolioWritePage from './pages/portfolio_write/portfolio_write_1/portfolio_write_1';
+import Portfolio2 from "./pages/portfolio/portfolio_2/portfolio_2";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/mypage' component={MyPage}/>
         <Route path='/myfolio' component={Portfolio}/>
         <Route path='/myfolio_write' component={PortfolioWritePage}/>
+        <Route path='/myfolio2' component={Portfolio2}/>
     </div>
   );
 }

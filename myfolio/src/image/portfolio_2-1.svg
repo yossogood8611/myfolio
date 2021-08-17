@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1217" height="684" viewBox="0 0 1217 684">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_173" data-name="사각형 173" width="47" height="87" transform="translate(0.31 -0.219)" fill="#eb390f"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_118" data-name="그룹 118" transform="translate(-131 -82)">
+    <g id="그룹_91" data-name="그룹 91" transform="translate(0 -51)">
+      <text id="_2019_2021_I_m_a_Designer." data-name="2019              2021
+I&apos;m a  
+(                 ) Designer." transform="translate(187 387)" fill="#fff" font-size="60" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2019</tspan><tspan y="0" xml:space="preserve" font-size="120">              </tspan><tspan y="0">2021</tspan><tspan font-size="120"><tspan x="0" y="200" xml:space="preserve">I&apos;m a  </tspan></tspan><tspan fill="#eb390f" font-size="120"><tspan x="0" y="400" xml:space="preserve">(                 )</tspan><tspan y="400" xml:space="preserve" fill="#fff"> Designer.</tspan></tspan></text>
+      <g id="그룹_90" data-name="그룹 90" transform="translate(46.5 -36)">
+        <path id="패스_144" data-name="패스 144" d="M4848.4,1715.5h462.494" transform="translate(-4463 -1305.743)" fill="none" stroke="#eb390f" stroke-width="10"/>
+        <g id="마스크_그룹_23" data-name="마스크 그룹 23" transform="translate(819.69 362.219)" clip-path="url(#clip-path)">
+          <g id="사각형_172" data-name="사각형 172" transform="translate(-0.064 13.874) rotate(45)" fill="none" stroke="#eb390f" stroke-width="10">
+            <rect width="46.567" height="46.567" stroke="none"/>
+            <rect x="5" y="5" width="36.567" height="36.567" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="MyFolio" transform="translate(131 108)" fill="#878787" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">MyFolio</tspan></text>
+  </g>
+</svg>

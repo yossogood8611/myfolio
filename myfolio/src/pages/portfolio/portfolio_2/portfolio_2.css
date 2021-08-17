@@ -1,0 +1,148 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #303030;
+    box-sizing: border-box;
+    color: white;
+    height: 5000px;
+}
+
+.portfolio_banner {
+    padding-top: 82px;
+    margin-left: -250px;
+    width: 1216px;
+    height: 684px;
+}
+
+.down_btn {
+    width: 0;
+    height: 0;
+    border-top:50px solid #878787;
+    border-right: 40px solid transparent;
+    border-left: 40px solid  transparent;
+    margin-top: 187px;
+    margin-bottom: 150px;
+}
+
+.portfolio_part{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 67px;
+}
+
+.part_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 463px;
+    border-right: solid #EB390F 2px;
+    box-sizing: border-box;
+}
+
+.part_left_num {
+    font-size: 48px;
+    color: #525252;
+    margin-bottom: 100px;
+}
+
+.part_left_title {
+    font-size: 48px;
+    color:#EB390F;
+}
+
+.part_right_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.profile_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.profile_box_img{
+    width: 464px;
+    height: 464px;
+    border-radius: 5px;
+    background-color: #878787;
+    margin-right: 70px;
+}
+
+.profile_box_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile_box_content_text{
+    width: 700px;
+    font-size: 24px;
+    margin-bottom: 230px;
+}
+
+.profile_box_content_mini{
+    color: #878787;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.profile_history {
+    display: flex;
+    flex-direction: column;
+    width: 1113px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.history{
+    width: 1016px;
+    margin: 48px 0;
+}
+
+.history_up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.history_down{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.history_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history_title{
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+
+.history_sub{
+    color: #878787;
+    font-size: 24px;
+}
+
+.portfolio_footer{
+    background-color: #EB390F;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 24px;
+    margin-top: 100px;
+}
