@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {withRouter, Link} from "react-router-dom";
 import './header.css';
 import header_profile from '../../image/header_profile.svg';
+import {getCookie} from "../../cookies";
 
 class Header extends Component {
     render() {
@@ -17,13 +18,25 @@ class Header extends Component {
                             <div>마이폴리오</div>
                             <div>마이폴리오</div>
                         </div>
-                        <div className="buttons">
-                            <div className="upload_button">업로드</div>
-                            <Link to={`/mypage`}>
-                                <div className="myPortfolio_button">마이 포트폴리오</div>
-                            </Link>
-                        </div>
-                        <img className="profile" src={header_profile}/>
+                        {getCookie("accessToken")?(
+                            <div>
+                                <div className="buttons">
+                                    <div className="upload_button">업로드</div>
+                                    <Link to={`/mypage`}>
+                                        <div className="myPortfolio_button">마이 포트폴리오</div>
+                                    </Link>
+                                </div>
+                                <img className="profile" src={header_profile}/>
+                            </div>
+                        ):(
+                            <div>
+                                <div className="buttons">
+                                    <Link to={`/login`}>
+                                        <div className="upload_button">로그인</div>
+                                    </Link>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

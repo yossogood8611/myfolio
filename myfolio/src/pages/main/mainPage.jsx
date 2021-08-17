@@ -5,6 +5,8 @@ import './main.css';
 
 class MainPage extends Component {
     render() {
+
+
         return (
             <div>
                 <div className="main_page">

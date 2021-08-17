@@ -22,7 +22,7 @@ class MyPage extends Component {
         let userSeq = getCookie('userSeq');
         let result = await axios({
             method : 'GET',
-            url : `http://localhost:8080/user/${userSeq}`,
+            url : `http://13.124.125.78:8080/user/${userSeq}`,
             headers : {
                 "Content-Type": 'application/json',
                 'x-access-token' : getCookie('accessToken')
@@ -38,7 +38,7 @@ class MyPage extends Component {
         let userSeq = getCookie("userSeq");
         let result = await axios ({
             method : 'GET',
-            url : `http://localhost:8080/portfolio/${userSeq}`,
+            url : `http://13.124.125.78:8080/portfolio/${userSeq}`,
             headers : {
                 "Content-Type": 'application/json',
                 'x-access-token' : getCookie('accessToken')
@@ -52,6 +52,7 @@ class MyPage extends Component {
     componentDidMount() {
         this.getUser();
         this.getPortfolio();
+        console.log(this.state.email, this.state.name);
     }
 
     render() {

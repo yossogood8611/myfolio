@@ -1,0 +1,358 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.portfolio_part_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 75px 45px;
+    height: 1000px;
+}
+
+.portfolio_banner{
+    width: 100%;
+}
+
+.profile_text{
+    color: #FF7D7D;
+    font-size: 48px;
+}
+
+.profile_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.profile_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_1_img{
+    width: 464px;
+    height: 464px;
+    border-radius: 100%;
+    background-color: #ADADAD;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.profile_1_name{
+    color: #16D6C2;
+    font-size: 36px;
+    margin-bottom: 7px;
+}
+
+.profile_1_birth{
+    color: #878787;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile_1_job {
+    color: #878787;
+    font-size: 24px;
+}
+
+.profile_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 90px;
+}
+
+.profile_title{
+    color: #16D6C2;
+    font-size: 36px;
+    margin-bottom: 21px;
+}
+
+.profile_contents{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0px;
+}
+
+.profile_content{
+    color: #878787;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.profile_content_left {
+    width: 200px;
+    text-align: left;
+}
+
+.profile_my_box{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stack{
+    width: 331px;
+    height: 23px;
+    border: solid #16D6C2 2px;
+    border-radius: 20px;
+    background-color: #FFFBF1;
+}
+
+.stack_on{
+    width: 150px;
+    height: 23px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    background-color: #16D6C2;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 3px 10px 0 0;
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #878787;
+}
+
+.portfolio_part_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 75px 45px;
+    height: 1100px;
+}
+
+.project_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.projectImg {
+    width: 800px;
+    height: 800px;
+    border-radius: 75px;
+    background-color: #878787;
+    margin-right: 85px;
+}
+
+.project_contents{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project_title{
+    color: #16D6C2;
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+.project_period {
+    font-size: 24px;
+    color: #878787;
+    margin-bottom: 90px;
+}
+
+.project_text {
+    font-size: 24px;
+    color: #878787;
+    margin-bottom: 350px;
+    width: 791px;
+}
+
+.project_useT {
+    font-size: 24px;
+    color: #16D6C2;
+    margin-bottom: 23px;
+}
+
+.project_useP {
+   font-size: 24px;
+    color: #878787;
+}
+
+.portfolio_part_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 75px 45px;
+    height: 1100px;
+    box-sizing: border-box;
+}
+
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 904px;
+    height: 579px;
+    margin-top: 51px;
+    margin-left: 400px;
+}
+
+.contact_array{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact_small_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.input_name {
+    width: 361px;
+    border: solid #BDBDBD 1px;
+    border-radius: 5px;
+    color: #878787;
+    background-color: white;
+    height: 50px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding:10px 0 0 25px;
+}
+
+.input_email {
+    width: 538px;
+    border: solid #BDBDBD 1px;
+    border-radius: 5px;
+    color: #878787;
+    background-color: white;
+    height: 50px;
+    font-size: 18px;
+    padding:10px 0 0 25px;
+    box-sizing: border-box;
+}
+
+.input_title {
+    width: 100%;
+    border: solid #BDBDBD 1px;
+    border-radius: 5px;
+    color: #878787;
+    background-color: white;
+    height: 50px;
+    margin: 5px 0;
+    font-size: 18px;
+    padding:10px 0 0 25px;
+    box-sizing: border-box;
+}
+
+.input_content {
+    width: 100%;
+    border: solid #BDBDBD 1px;
+    border-radius: 5px;
+    color: #878787;
+    background-color: white;
+    height: 318px;
+    font-size: 18px;
+    padding:10px 0 0 25px;
+    box-sizing: border-box;
+}
+
+.submit_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.submit_btn{
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: #16D6C2;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 13px;
+    text-align: center;
+}
+
+.contactMe {
+    color: #FF7D7D;
+    font-size: 48px;
+}
+
+.contact_me {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 287px;
+    align-items: flex-start;
+    margin : 255px 0 0 44px;
+}
+
+.contact_title{
+    font-size: 24px;
+    color: #BDBDBD;
+    margin-bottom: 7px;
+}
+
+.contact_content {
+    font-size: 24px;
+    color: #16D6C2;
+    margin-bottom: 34px;
+}
+
+.portfolio_part_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.portfolio_footer{
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    background-color: #16D6C2;
+    text-align: center;
+    height: 100px;
+    box-sizing: content-box;
+    padding-top: 35px;
+}

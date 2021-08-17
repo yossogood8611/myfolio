@@ -34,7 +34,7 @@ class Join extends Component {
         }
         let result = axios({
             method : 'POST',
-            url : "http://localhost:8080/user/signup",
+            url : "http://13.124.125.78:8080/user/signup",
             headers: {
                 "Content-Type" : `application/json`,
             },
@@ -50,7 +50,7 @@ class Join extends Component {
                 alert("회원가입이 성공적으로 완료되었습니다.");
                 const response = axios({
                     method : 'POST',
-                    url : "http://localhost:8080/user/login",
+                    url : "http://13.124.125.78:8080/user/login",
                     headers:{
                         "Content-Type" : "application/json"
                     },
@@ -61,10 +61,8 @@ class Join extends Component {
                 }).then((response)=>{
                     if(response.status<400){
                         const {history} = this.props;
-                        this.state.token = result.data.accessToken;
-                        this.state.userSeq = result.data.userSeq;
-                        setCookie("userSeq", this.state.userSeq);
-                        setCookie("accessToken", this.state.token);
+                        setCookie("userSeq", result.data.userSeq);
+                        setCookie("accessToken", result.data.accessToken);
                         history.push('/join_done');
                     }
                 });
@@ -119,7 +117,7 @@ class Join extends Component {
 
                             <div className="login_email_text">유저 타입</div>
                             <form className="join_userType">
-                                <label for="0">개발자</label>
+                                <label htmlFor="0">개발자</label>
                                 <input type="radio" value="개발자" id="0" className="join_userType_" onClick={this.handleChangeUserType}/>
                                 <label htmlFor="1">디자이너</label>
                                 <input type="radio" value="디자이너" id="1" onClick={this.handleChangeUserType_}/>
