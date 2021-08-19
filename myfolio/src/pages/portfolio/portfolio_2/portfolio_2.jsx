@@ -3,12 +3,14 @@ import {withRouter, Link} from "react-router-dom";
 import './portfolio_2.css';
 import Img from '../../../image/portfolio_2-1.svg';
 import History from '../../../image/portfolio_2_history.svg';
+import man from '../../../image/man-945438_1920.svg';
+import stack from '../../../image/그룹 133.svg';
 
 class Portfolio_2 extends Component {
     render() {
         return (
             <div>
-                <div className="portfolio">
+                <div className="portfolio2">
                     <img className="portfolio_banner" src={Img}/>
                     <div className="down_btn"> </div>
                     <div className="portfolio_part">
@@ -18,7 +20,7 @@ class Portfolio_2 extends Component {
                         </div>
                         <div className="part_right_01">
                             <div className="profile_box">
-                                <img className="profile_box_img"/>
+                                <img className="profile_box_img" src={man}/>
                                 <div className="profile_box_content">
                                     <div className="profile_box_content_text">
                                         '신호등'은 이제 막 성인이 된 청춘의 심정을 담은 곡으로, '사회'라는
@@ -70,7 +72,7 @@ class Portfolio_2 extends Component {
                             <div className="part_left_title">Skills</div>
                         </div>
                         <div className="part_right_01">
-
+                            <img src={stack}/>
                         </div>
                     </div>
                     <div className="portfolio_part">

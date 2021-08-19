@@ -18,7 +18,7 @@ class JoinDone extends Component {
                             <div className="join_done_msg2">마이폴리오의 회원이 되신 것을 환영합니다.</div>
                             <div className="join_done_msg3">마이폴리오의 여러가지 템플릿을 사용하여<br/>나만의 포트폴리오를 만들어 보세요!</div>
                             <img className="join_done_img" src={JoinImg}/>
-                            <Link to={`/`}><div className="login_next_btn_able">시작하기</div></Link>
+                            <Link to={`/login`}><div className="login_next_btn_able">시작하기</div></Link>
                         </div>
                     </div>
                 </div>

@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import {withRouter, Link} from "react-router-dom";
 import Header from '../../../components/header/Header';
 import img1 from '../../../image/portfolio_1-1.svg';
+import img from '../../../image/img.png';
 import './portfolio.css';
 
 class Portfolio_1 extends Component {
     render() {
         return (
             <div>
-                <div className="portfolio">
-                    <img src={img1} className="portfolio_banner"/>
+                <div className="portfolio1">
+                    <img src={img1} className="portfolio_banner1"/>
                     <div className="portfolio_part_1">
                         <div className="profile">
                             <div className="profile_text">About Me</div>
@@ -25,15 +26,15 @@ class Portfolio_1 extends Component {
                                         <div className="profile_title">EDUCATION</div>
                                         <div className="profile_contents">
                                             <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>서울과학기술대학교</div>
+                                                <div className="profile_content_left">2008.03.02</div>
+                                                <div>냠냠 영어 어린이집</div>
                                             </div>
                                             <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>서울과학기술대학교</div>
+                                                <div className="profile_content_left">2018.03.02</div>
+                                                <div>창동고등학교</div>
                                             </div>
                                             <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
+                                                <div className="profile_content_left">2023.03.02</div>
                                                 <div>서울과학기술대학교</div>
                                             </div>
                                         </div>
@@ -43,12 +44,12 @@ class Portfolio_1 extends Component {
                                         <div className="profile_title">WORK</div>
                                         <div className="profile_contents">
                                             <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>해법수학학원</div>
+                                                <div className="profile_content_left">2020.05.07</div>
+                                                <div>교내 근로</div>
                                             </div>
                                             <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>도미노예</div>
+                                                <div className="profile_content_left">2021.05.01</div>
+                                                <div>해법 수학 학원</div>
                                             </div>
                                         </div>
                                     </div>
@@ -57,12 +58,8 @@ class Portfolio_1 extends Component {
                                         <div className="profile_title">AWORDS</div>
                                         <div className="profile_contents">
                                             <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>룰루어워드</div>
-                                            </div>
-                                            <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>룰루어워드</div>
+                                                <div className="profile_content_left">2019.12.10</div>
+                                                <div>한이음</div>
                                             </div>
                                         </div>
                                     </div>
@@ -72,36 +69,22 @@ class Portfolio_1 extends Component {
                                         <div className="profile_title">SKILLS</div>
                                         <div className="profile_contents">
                                             <div className="profile_content">
-                                                <div className="profile_content_left">HTML</div>
+                                                <div className="profile_content_left">REACT</div>
                                                 <div className="stack">
-                                                    <div className="stack_on">45%</div>
+                                                    <div className="stack_on">75%</div>
                                                 </div>
                                             </div>
                                             <div className="profile_content">
-                                                <div className="profile_content_left">HTML</div>
+                                                <div className="profile_content_left">HTML & CSS</div>
                                                 <div className="stack">
-                                                    <div className="stack_on">45%</div>
+                                                    <div className="stack_on2">80%</div>
                                                 </div>
                                             </div>
                                             <div className="profile_content">
-                                                <div className="profile_content_left">HTML</div>
+                                                <div className="profile_content_left">GitHub</div>
                                                 <div className="stack">
-                                                    <div className="stack_on">45%</div>
+                                                    <div className="stack_on3">60%</div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br/><br/>
-                                    <div className="profile_my_box">
-                                        <div className="profile_title">ACHIVE</div>
-                                        <div className="profile_contents">
-                                            <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>해법수학학원</div>
-                                            </div>
-                                            <div className="profile_content">
-                                                <div className="profile_content_left">2000.00.00</div>
-                                                <div>도미노예</div>
                                             </div>
                                         </div>
                                     </div>
@@ -132,19 +115,17 @@ class Portfolio_1 extends Component {
                         <div className="project">
                             <div className="profile_text">Project</div>
                             <div className="project_box">
-                                <img className="projectImg"/>
+                                <img className="projectImg" src={img}/>
                                 <div className="project_contents">
-                                    <div className="project_title">SEC PROJECT</div>
-                                    <div className="project_period">2021.02.01 ~ 2021.08.17</div>
+                                    <div className="project_title">MyFolio PROJECT</div>
+                                    <div className="project_period">2021.00.01 ~ 2021.08.15</div>
                                     <div className="project_text">
-                                        홈페이지를 이용하는 사용자를 크게 일반 사용자와 상인으로 설정하고
-                                        각 사용자층에 맞는 내용 추가, 불필요한 내용 삭제 홈페이지를 홈페이지를
-                                        이용하는 사용자를 크게 일반 사용자와 상인으로 설정하고
-                                        각 사용자층에 맞는 내용 추가, 불필요한 내용 삭제 홈페이지를
+                                        개발자, 디자이너에게 포트폴리오 템플릿을 제공하여, 손 쉽게 온라인 포트폴리오를 작성할 수 있게 한다.
+                                         작성을 마치면 마이페이지에서 작성한 포트폴리오를 확인, 수정할 수 있다.
                                     </div>
                                     <div className="project_useT">사용 프로그램</div>
                                     <div className="project_useP">
-                                        React, HTML, JavaScript, MySQL
+                                        React, JavaScript, MySQL
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +160,7 @@ class Portfolio_1 extends Component {
                         </div>
                     </div>
                     <div className="portfolio_part_4">
-                        <div className="portfolio_footer">ⓒ 2021. Myfolio. all rights reserved.</div>
+                        <div className="portfolio_footer1">ⓒ 2021. Myfolio. all rights reserved.</div>
                     </div>
                 </div>
             </div>

@@ -48,24 +48,6 @@ class Join extends Component {
         }).then((result)=>{
             if(result.status < 400){
                 alert("회원가입이 성공적으로 완료되었습니다.");
-                const response = axios({
-                    method : 'POST',
-                    url : "http://13.124.125.78:8080/user/login",
-                    headers:{
-                        "Content-Type" : "application/json"
-                    },
-                    data : {
-                        email : email,
-                        pwd : pwd
-                    }
-                }).then((response)=>{
-                    if(response.status<400){
-                        const {history} = this.props;
-                        setCookie("userSeq", result.data.userSeq);
-                        setCookie("accessToken", result.data.accessToken);
-                        history.push('/join_done');
-                    }
-                });
             }else {
                 alert('회원가입 실패');
             }
@@ -122,7 +104,9 @@ class Join extends Component {
                                 <label htmlFor="1">디자이너</label>
                                 <input type="radio" value="디자이너" id="1" onClick={this.handleChangeUserType_}/>
                             </form>
-                            <div className="login_next_btn_able" onClick={this.join}>가입하기</div>
+                            <Link to={`/join_done`}>
+                                <div className="login_next_btn_able" onClick={this.join}>가입하기</div>
+                            </Link>
                             <div className="login_social">SNS 계정으로 로그인하기</div>
                             <div className="login_social_icon_box">
                                 <img className="login_social_icon" src={naver_icon}/>

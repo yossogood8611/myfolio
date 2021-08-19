@@ -10,18 +10,15 @@ class Header extends Component {
             <div>
                 <div className="header">
                     <div className="contents">
-                        <Link to={'/'}><div className="logo">MyFolio</div></Link>
+                        <div className="logo">MyFolio</div>
                         <div className="menu">
-                            <div>마이폴리오</div>
-                            <div>마이폴리오</div>
-                            <div>마이폴리오</div>
-                            <div>마이폴리오</div>
-                            <div>마이폴리오</div>
                         </div>
                         {getCookie("accessToken")?(
                             <div>
                                 <div className="buttons">
-                                    <div className="upload_button">업로드</div>
+                                    <Link to={`/myfolio_write`}>
+                                        <div className="upload_button">업로드</div>
+                                    </Link>
                                     <Link to={`/mypage`}>
                                         <div className="myPortfolio_button">마이 포트폴리오</div>
                                     </Link>

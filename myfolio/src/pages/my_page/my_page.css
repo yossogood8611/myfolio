@@ -7,14 +7,14 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    padding: 75px 90px 30px 140px;
-    height: 335px;
+    padding: 20px 90px 0 90px;
+    height: 300px;
 }
 
-.profile{
+.profile1{
     display: flex;
     flex-direction: row;
-    width: 700px;
+    margin: 40px 0 0 50px;
 }
 
 .profile_img{
@@ -22,12 +22,14 @@
     height: 158px;
     border-radius: 100px;
     background-color: #ADADAD;
+    margin-right: 30px;
 }
 
 .profile_contents{
     display: flex;
     flex-direction: column;
     margin-left: 46px;
+    margin-top: 30px;
 }
 
 .profile_email{
@@ -74,6 +76,7 @@
     align-items: flex-start;
     height: 452px;
     margin-bottom: 40px;
+    margin-right: 50px;
 }
 
 .portfolio_img{
