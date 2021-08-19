@@ -13,7 +13,6 @@ class Header extends Component {
                         <div className="logo">MyFolio</div>
                         <div className="menu">
                         </div>
-                        {getCookie("accessToken")?(
                             <div>
                                 <div className="buttons">
                                     <Link to={`/myfolio_write`}>
@@ -25,7 +24,6 @@ class Header extends Component {
                                 </div>
                                 <img className="profile" src={header_profile}/>
                             </div>
-                        ):(
                             <div>
                                 <div className="buttons">
                                     <Link to={`/login`}>
@@ -33,7 +31,6 @@ class Header extends Component {
                                     </Link>
                                 </div>
                             </div>
-                        )}
                     </div>
                 </div>
             </div>

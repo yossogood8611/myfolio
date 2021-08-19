@@ -81,7 +81,9 @@ class Login extends Component {
                                 <input type="password" className="login_email_form" id="pwd" placeholder="비밀번호를 입력해주세요" onChange={this.handleChangePwd} onKeyPress={this.onKeyPress}/>
 
                             {this.isEmail(this.state.email)?(
-                                    <div className="login_next_btn_able" onClick={this.login}>로그인</div>
+                                <Link to={`/`}>
+                                    <div className="login_next_btn_able">로그인</div>
+                                </Link>
                             ) : (
                                 <div className="login_next_btn">로그인</div>
                             )}
